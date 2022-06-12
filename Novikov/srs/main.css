@@ -1,0 +1,439 @@
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('./fonts/gilroy-bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/gilroy-bold.svg') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/gilroy-bold.ttf') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/gilroy-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/gilroy-bold.woff2') format('woff2'), /* Safari, Android, iOS */
+		url('../fonts/gilroy-bold.svg#gilroy-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url("./fonts/Gilroy-Medium.woff2") format('woff2'),
+        url("./fonts/Gilroy-Medium.woff") format('woff'),
+        url('./fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+   display: flex;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color:  #828282;
+    font-size: 18px;
+    font-family: 'Gilroy-Bold'
+}
+
+nav > ul > li > a:hover{
+    color: #070707;
+}
+
+nav > ul > li > a.mPS2id-highlight{
+    color:  #070707;
+}
+
+ 
+ul{
+    width: 95%;
+    list-style: none;
+    display:  flex;
+    justify-content: space-evenly;
+}
+
+.lineHeader{
+    margin-top: 3%;
+    width: 70%;
+    border: 1px solid #828282
+}
+
+.priwieHeading{
+    height: 100px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.priwieHeading > h1{
+    font-family: 'Gilroy-Bold';
+    font-size: 47.3392px;
+    line-height: 59px;
+    color:  #070707;
+    margin-bottom: 8%;
+}
+
+.priwieHeading > p{
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+}
+
+.launcheRuRu{
+    color: #070707;
+    text-decoration: none;
+    font-family: 'Gilroy-Bold';
+    font-size: 16px;
+    line-height: 20px;
+    transition: 1s
+}
+
+.launcheRuEn{
+    text-decoration: none;
+    font-family: 'Gilroy-Bold';
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+    transition: 1s
+}
+
+.launcheEnRu{
+    text-decoration: none;
+    font-family: 'Gilroy-Bold';
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+    transition: 1s
+}
+
+.launcheEnEn{
+    color: #070707;
+    text-decoration: none;
+    font-family: 'Gilroy-Bold';
+    font-size: 16px;
+    line-height: 20px;
+    transition: 1s
+}
+
+.launch > a:hover{
+    color: #070707;
+}
+
+.launch > a:active{
+    color:  #070707;
+    transition: 0s ;
+}
+
+.launch{
+    transform: rotate(-90deg)
+}
+
+.priwie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.priwieSlideContainer{
+    max-width: 940px;
+    position: relative;
+    margin: auto;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 2s ;
+}
+
+.dot:hover{
+    background-color: #070707;
+}
+
+.dot:active{
+    background:  #070707;
+    transition: color  3s ;
+}
+
+.fade {
+    display: none;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.prewieSlidesNext{
+    margin: auto;
+}
+
+.aboutMe{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F6F6;
+    margin-top: 5%;
+}
+
+.aboutMe > h2{
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+    margin-top: 8%;
+}
+
+.aboutMe > p{
+    width: 70%;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+}
+
+.skills{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.skills > h2{
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    color: #070707;
+    margin-top: 5%;
+}
+
+.skills > p{
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    margin-top: 3%;
+}
+
+.slillsIcon{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.slillsIcon > div > p{
+    font-family: 'Gilroy-Bold';
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+    text-align: center;
+    margin-top: 12%;
+}
+
+.php, .illustratot, .after, .figma{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phpIcon{
+    background-image: url(./img/php.png);
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+}
+
+.illustratotIcon{
+    background-image: url(./img/illustarator.png);
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+}
+
+.afterIcon{
+    background-image: url(./img/after.png);
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+}
+
+.figmaIcon{
+    background-image: url(./img/figma.png);
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+}
+
+.phpStar, .afterStar, .figmaStar{
+    background-image: url(./img/phpStar.png);
+    height: 30px;
+    width: 175px;
+    background-repeat: no-repeat;
+    margin-top: 10%;
+}
+
+.illustratotStar{
+    background-image: url(./img/illustarartorStar.png);
+    height: 30px;
+    width: 175px;
+    background-repeat: no-repeat;
+    margin-top: 10%;
+}
+
+.figmaStar{
+    margin-top: 20%;
+}
+
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12%;
+    background-color: #F6F6F6;;
+}
+
+.portfolio > h2{
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+    margin-top: 8%;
+}
+
+.portfolio > div > p{
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #070707;
+}
+
+
+.storePhoto{
+    background-image: url(./img/store.png);
+    width: 940px;
+    height: 510px;
+    background-repeat: no-repeat;
+    margin-top: 8%;
+}
+
+.reebokPhoto{
+    background-image: url(./img/reebok.png);
+    width: 940px;
+    height: 510px;
+    background-repeat: no-repeat;
+    margin-top: 8%;
+}
+
+.braunPhoto{
+    background-image: url(./img/braun.png);
+    width: 940px;
+    height: 510px;
+    background-repeat: no-repeat;
+    margin-top: 8%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8%;
+
+}
+
+.contact > h2{
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+}
+
+.contactTextHeading{
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+}
+
+.contact > a{
+    margin-top: 1%;
+}
+
+.contactIcon{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.contactTextBotom{
+    font-family: 'Gilroy-Bold';
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+    margin-top: 4%;
+}
+
+.top{
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: #dddada;
+    bottom: 35px;
+    right: 35px;
+    position: fixed;
+    border-radius: 20%;
+    line-height: 30px;
+    text-align: center;
+}
+
+.fa{
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #ffffff !important;
+    border-right: 2px solid #fffdfd !important;
+    transform: rotate(-45deg);
+    display: inline-block;
+    transition: 1s;
+    margin-top: 12px;
+}
+
+.top.mPS2id-highlight{
+    display: none;
+}
+

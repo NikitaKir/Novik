@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./srs/main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./srs/jquery.malihu.PageScroll2id.min.js"></script>
+    <script src="./srs/main.js"></script>
+    <title>Novikov</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home" rel='m_PageScroll2id'>Домой</a>
+                </li>
+                <li>
+                    <a href="#about" rel='m_PageScroll2id'>Обо мне</a>
+                </li>
+                <li>
+                    <a href="#skills" rel='m_PageScroll2id'>Навыки</a>
+                </li>
+                <li>
+                    <a href="#portfolio" rel='m_PageScroll2id'>Портфолио</a>
+                </li>
+                <li>
+                    <a href="#contacts" rel='m_PageScroll2id'>Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="lineHeader"></div>
+    </header>
+    <section id="home">
+    <main class="priwie">
+        <div class="priwieHeading">
+            <h1>Denis <br> Novik</h1>
+            <p>UX | UI дизайнер <br> 24 года, Минск</p>
+            <p class="launch"><a class="launcheRuRu" href="#" id="tagP" onclick="clickColor()">RU</a>| 
+                <a  class="launcheRuEn" href="./main.html" id="tagP" onclick="clickColor()">ENG</a></p>
+        </div>
+        <div class="priwieSlideContainer">
+          <div class="prewieSlide fade1">
+             <img src="./srs/img/1.png" >
+           </div>
+           <div class="prewieSlide fade">
+            <img src="./srs/img/2.png">
+           </div>
+           <div class="prewieSlide fade">
+            <img src="./srs/img/3.png">
+           </div>
+           <div class="prewieSlide fade">
+            <img src="./srs/img/4.png" >
+           </div>
+           <div class="prewieSlide fade">
+            <img src="./srs/img/5.png" >
+           </div>
+           <div class="prewieSlide fade">
+               <img src="./srs/img/6.png"  >
+           </div>
+        </div>   
+        <div  calass="prewieSlidesNext" style="text-align: centre; margin-top: 2%;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+    </main>
+    </section>
+    <section id="about">
+    <main class="aboutMe">
+        <h2>Обо мне</h2>
+        <p>Привет, я Денис – UX/UI дизайнер из Минска. <br>
+            Я интересуюсь дизайном и всем, что с ним связано.</p>
+        <p>Я учусь на курсах "Веб- и мобильный дизайн
+            интерфейсов" в IT-Академии.</p>
+        <p>Готовы реализовать отличные проекты <br>
+            с замечательными людьми.</p>
+    </main>
+    </section>
+    <section id="skills">
+    <main class="skills">
+        <h2>Навыки</h2>
+        <p>Я работаю в таких программах, как</p>
+        <div class="slillsIcon">
+            <div class="php">
+                <div class="phpIcon"></div>
+                <p>Adobe <br>
+                    Photoshop</p>
+                <div class="phpStar"></div>
+            </div>
+            <div class="illustratot">
+                <div class="illustratotIcon"></div>
+                <p>Adobe <br>
+                    Illustrator</p>
+                <div class="illustratotStar"></div>
+            </div>
+            <div class="after">
+                <div class="afterIcon"></div>
+                <p>Adobe <br>
+                    After Effects</p>
+                <div class="afterStar"></div>
+            </div>
+            <div class="figma">
+                <div class="figmaIcon"></div>
+                <p>Figma</p>
+                <div class="figmaStar"></div>
+            </div>
+        </div>
+    </main>
+    </section>
+    <section id="portfolio">
+    <main class="portfolio">
+        <h2>Портфолио</h2>
+        <div class="portfolioStore">
+            <div class="storePhoto"></div>
+            <p>Интернет-магазин модной одежды - Главная страница</p>
+        </div>
+        <div class="portfolioReebok">
+            <div class="reebokPhoto"></div>
+            <p>Концепция магазина Reebok</p>
+        </div>
+        <div class="portfolioBraun">
+            <div class="braunPhoto"></div>
+            <p>Концепция целевой страницы Braun</p>
+        </div>
+    </main>
+    </section>
+    <section id="contacts">
+    <main class="contact">
+        <h2>Контакты</h2>
+        <p class="contactTextHeading">Хотите узнать больше или просто поболтать? <br> 
+            Добро пожаловать!</p>
+        <a href="#"><img src="./srs/img/sentmesenger.png" alt=""></a>
+        <div class="contactIcon">
+            <a href="#"><img src="./srs/img/cont1.png" alt=""></a>
+            <a href="#"><img src="./srs/img/cont2.png" alt=""></a>
+            <a href="#"><img src="./srs/img/cont3.png" alt=""></a>
+            <a href="#"><img src="./srs/img/cont4.png" alt=""></a>
+        </div>
+        <p class="contactTextBotom">Ищи меня на <br>
+            LinkedIn, Instagram, Behance, Dribble</p>
+    </main>
+    </section>
+    <a href="#home" class="top">
+        <i aria-hidden="true" class="fa"></i>
+    </a>
+</body>
+</html>
